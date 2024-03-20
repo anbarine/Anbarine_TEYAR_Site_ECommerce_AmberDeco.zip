@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700;800&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "League_Spartan" , sans-serif;
+    outline: none; 
+    border:none;
+    text-decoration: none;
+    text-transform: capitalize ;
+    transition: .2s linear;
+    background-color:  #F1EFE7;
+    
+}
+
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x:hidden
+}
+
+
+section{
+    padding: 2rem 9%;
+}
+
+main {
+   padding-top: 10rem ;
+   padding-bottom: 10rem;
+   background-color: #fff;
+
+}
+
+
+main h3{
+    text-decoration: underline solid 0.2rem #333;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: #fff;
+}
+
+span{
+    color: #81263c;
+    background-color: transparent;
+}
+
+.btn{
+    display:inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: #ac3c58;
+}
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    background: #F1EFE7 ;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) ;
+}
+
+header .logo{
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+
+}
+header a{
+    size: 10px;
+    margin:0;
+    padding:0;
+
+}
+header  .logo span{
+    color: #ac3c58;
+    
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color: #666;
+}
+
+header .navbar a:hover{
+    color: #ac3c58 ;
+}
+
+header .icones a{
+    font-size: 2.5rem;
+    color:#ac3c58;
+    margin-left: 1.5em; 
+}
+
+header .icones a:hover{
+    color:var(--bordeau);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#ac3c58;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    border: 0.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+h3 a{
+    color:#333;
+    text-decoration: underline solid 0.5rem #81263c;
+}
+h3 a:hover{
+    color:#ac3c58;
+    text-decoration: underline solid 0.5rem #81263c;
+}
+.everyproduct{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding:3rem 2rem;
+    margin-bottom:10rem ;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,.1);
+}
+
+
+.everyproduct .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap:2rem;
+}
+
+.everyproduct .product-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    outline: 0.1rem solid #ccc;
+    outline-offset: -1.5rem;
+    cursor:pointer;
+}
+.everyproduct .product-container .product:hover{
+    outline: 0.2rem solid #222;
+    outline-offset: 0;
+
+}
+.everyproduct .product-container .product img{
+    height:25rem;
+}
+
+.everything .product-container .product:hover img{
+    transform:scale(.9);
+}
+.everyproduct h3{
+    padding: 0.5rem 0;
+    font-size: 3rem;
+    color: #444;
+    
+}
+.everyproduct h4{
+    padding: 0.5rem 0;
+    font-size: 2rem;
+    color: #444;
+}
+
+.everyproduct .product-container .product .price{
+    font-size: 2rem;
+    color: #444
+}
+
+
+
+footer .box-container{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    margin-top: 10rem;
+}
+
+footer .box-container .box ul{
+    list-style-type: none;
+}
+
+footer .box-container .box h3{
+    color:#333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+
+footer .box-container .box a{
+    display: block;
+    color:#666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+
+footer .box-container .box a:hover{
+    color:#ac3c58;
+    text-decoration: underline;
+}
+
+
+
+footer .credit{
+    text-align: center;
+    padding:1.5rem;
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color:#333;
+    border-top: .1rem inset rgba(0,0,0,.1);
+}
+
+
+footer .credit span{
+    color:#ac3c58;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+}
+    header{
+        padding: 2rem;
+
+    }
+
+    section{
+        padding:2rem;
+    }
+
+.home{
+    background-position: left;
+}
+}
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+    
+}
+header .navbar{
+    position: absolute;
+    top:100%; left:0; right:0;
+    background: #F1EFE7 ;
+    border-top:0.1rem solid rgba(0,0,0,.1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+
+
+}
+header #toggler:checked ~ .navbar{
+    clip-path:polygon(0 0, 100% 0,100% 100%, 0 100%); ;
+}
+header .navbar a{
+    margin: 1.5rem;
+    padding:1.5rem;
+    background: #fff;
+    border: 0.1rem solid #F1EFE7;
+    display: block;
+}
+
+.home .content h3{
+font-size: 5rem;
+}
+
+.home.content span{
+    font-size:2.5rem;
+}
+
+.icons-container .icons h3{
+
+    font-size: 2rem;
+}
+
+.icons-container .icons span{
+    font-size: 1.7rem;
+}
+
+.products .box-container .box{
+  margin-left: 5rem;
+}
+
+}
+
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+}
